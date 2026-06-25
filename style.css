@@ -1,0 +1,558 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fbf3ea;
+    color: #2f201b;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: rgba(255, 248, 240, 0.85);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #2f201b;
+}
+
+.nav-logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-menu a {
+    color: #2f201b;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.nav-menu a:hover {
+    color: #b98952;
+}
+
+/* HERO */
+.hero {
+    min-height: 100vh;
+    background-image: linear-gradient(
+        rgba(255, 248, 240, 0.78),
+        rgba(255, 248, 240, 0.62)
+    ), url("assets/hero-perfume.jpg");
+    background-size: cover;
+    background-position: center right;
+    display: flex;
+    align-items: center;
+    padding: 120px 8% 80px;
+}
+
+.hero-content {
+    max-width: 620px;
+}
+
+.hero-content h1 {
+    font-size: 62px;
+    line-height: 1.1;
+    margin-bottom: 22px;
+    color: #2f201b;
+}
+
+.hero-content p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #6f5a4a;
+    margin-bottom: 34px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #b98952;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #8c6238;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #2f201b;
+    border: 2px solid #2f201b;
+}
+
+.btn-outline:hover {
+    background-color: #2f201b;
+    color: white;
+}
+
+/* ABOUT */
+.about {
+    padding: 90px 8%;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+    align-items: center;
+    background-color: #fffaf4;
+}
+
+.about-text h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #2f201b;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #6f5a4a;
+}
+
+.about-box {
+    background-color: #2f201b;
+    color: white;
+    padding: 34px;
+    border-radius: 24px;
+}
+
+.about-box h3 {
+    font-size: 26px;
+    margin-bottom: 18px;
+}
+
+.about-box ul {
+    list-style: none;
+}
+
+.about-box li {
+    margin-bottom: 14px;
+    line-height: 1.6;
+}
+
+.about-box li::before {
+    content: "✓ ";
+    color: #d7ad79;
+    font-weight: bold;
+}
+
+/* SECTION TITLE */
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title h2 {
+    font-size: 42px;
+    color: #2f201b;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    color: #6f5a4a;
+    font-size: 18px;
+}
+
+/* COLLECTION */
+.collection {
+    padding: 90px 8%;
+    background-color: #fbf3ea;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 24px;
+}
+
+.product-info h3 {
+    font-size: 28px;
+    color: #2f201b;
+    margin-bottom: 6px;
+}
+
+.character {
+    color: #b98952;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.notes {
+    color: #8c6238;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+.product-info p {
+    color: #6f5a4a;
+    line-height: 1.6;
+    margin-bottom: 14px;
+}
+
+.product-info span {
+    display: block;
+    color: #2f201b;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.btn-product {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-color: #b98952;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-product:hover {
+    background-color: #8c6238;
+}
+
+/* FIND YOUR SCENT */
+.scent-guide {
+    padding: 90px 8%;
+    background-color: #fffaf4;
+}
+
+.scent-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.scent-card {
+    background-color: #fbf3ea;
+    padding: 28px;
+    border-radius: 22px;
+    border: 1px solid #ead7c6;
+}
+
+.scent-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #2f201b;
+}
+
+.scent-card p {
+    color: #6f5a4a;
+    line-height: 1.7;
+}
+
+/* TESTIMONI */
+.testimoni {
+    padding: 90px 8%;
+    background-color: #fbf3ea;
+}
+
+.testimoni-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+}
+
+.testimoni-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 24px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.testimoni-card p {
+    color: #6f5a4a;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.testimoni-card h4 {
+    color: #b98952;
+}
+
+/* CARA ORDER */
+.order-steps {
+    padding: 90px 8%;
+    background-color: #fffaf4;
+}
+
+.steps-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 26px;
+}
+
+.step-card {
+    background-color: #2f201b;
+    color: white;
+    padding: 32px;
+    border-radius: 24px;
+}
+
+.step-card span {
+    display: inline-block;
+    color: #d7ad79;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.step-card h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.step-card p {
+    color: #ead7c6;
+    line-height: 1.7;
+}
+
+/* FAQ */
+.faq {
+    padding: 90px 8%;
+    background-color: #fbf3ea;
+}
+
+.faq-container {
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    gap: 18px;
+}
+
+.faq-item {
+    background-color: white;
+    padding: 26px;
+    border-radius: 20px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.05);
+}
+
+.faq-item h3 {
+    color: #2f201b;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    color: #6f5a4a;
+    line-height: 1.7;
+}
+
+/* CTA */
+.cta {
+    padding: 90px 8%;
+    text-align: center;
+    background-image: linear-gradient(
+        rgba(47, 32, 27, 0.86),
+        rgba(47, 32, 27, 0.86)
+    ), url("assets/hero-perfume.jpg");
+    background-size: cover;
+    background-position: center right;
+    color: white;
+}
+
+.cta h2 {
+    font-size: 42px;
+    margin-bottom: 16px;
+}
+
+.cta p {
+    color: #ead7c6;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #211612;
+    color: white;
+    text-align: center;
+    padding: 42px 8%;
+}
+
+.footer h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: #d9c7b8;
+    margin-bottom: 6px;
+}
+
+/* JS EFFECT */
+.navbar.scrolled {
+    background-color: rgba(255, 248, 240, 0.96);
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.12);
+}
+
+.nav-menu a.active {
+    color: #b98952;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: 0.7s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+    .product-container,
+    .scent-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        padding: 16px 6%;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .hero {
+        padding: 120px 6% 70px;
+        background-position: center;
+    }
+
+    .hero-content h1 {
+        font-size: 46px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        padding: 70px 6%;
+    }
+
+    .collection,
+    .scent-guide,
+    .testimoni,
+    .order-steps,
+    .faq,
+    .cta {
+        padding: 70px 6%;
+    }
+
+    .testimoni-container,
+    .steps-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav-logo span {
+        font-size: 18px;
+    }
+
+    .nav-logo img {
+        width: 38px;
+        height: 38px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section-title h2,
+    .about-text h2,
+    .cta h2 {
+        font-size: 32px;
+    }
+
+    .product-container,
+    .scent-container {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card img {
+        height: 250px;
+    }
+}
