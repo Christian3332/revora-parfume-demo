@@ -3,275 +3,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veyra Fragrance | Perfume Online Shop</title>
+    <title>Veyra Fragrance | Perfume Catalog</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="navbar">
-        <div class="nav-logo">
+    <nav class="navbar">
+        <div class="logo">
             <img src="assets/logo.png" alt="Veyra Fragrance Logo">
             <span>Veyra Fragrance</span>
         </div>
 
-        <nav class="nav-menu">
-            <a href="#home">Home</a>
-            <a href="#collection">Collection</a>
-            <a href="#scent">Find Your Scent</a>
-            <a href="#testimoni">Testimoni</a>
-            <a href="#faq">FAQ</a>
-        </nav>
-    </header>
+        <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#catalog">Catalog</a></li>
+            <li><a href="#guide">Find Scent</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+
+        <div class="menu-toggle">☰</div>
+    </nav>
 
     <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Aroma yang Dirancang untuk Meninggalkan Kesan</h1>
+        <div class="hero-text">
+            <span>Perfume Catalog</span>
+            <h1>Temukan Aroma yang Sesuai dengan Karaktermu</h1>
             <p>
-                Temukan parfum dengan karakter fresh, sweet, warm, hingga bold 
-                yang cocok untuk aktivitas harian maupun momen spesial.
+                Koleksi parfum dengan pilihan aroma fresh, sweet, warm, hingga bold
+                untuk menemani aktivitas harian dan momen spesial.
             </p>
 
             <div class="hero-buttons">
-                <a href="#collection" class="btn">Lihat Koleksi</a>
-                <a href="https://wa.me/6281234567890?text=Halo%20Veyra%20Fragrance,%20saya%20mau%20konsultasi%20pilih%20parfum" target="_blank" class="btn btn-outline">
-                    Konsultasi WhatsApp
+                <a href="#catalog" class="btn-primary">Lihat Catalog</a>
+                <a href="https://wa.me/6281234567890?text=Halo%20Veyra%20Fragrance,%20saya%20mau%20konsultasi%20pilihan%20parfum" target="_blank" class="btn-secondary">
+                    Konsultasi Aroma
                 </a>
             </div>
         </div>
     </section>
 
     <section class="about">
-        <div class="about-text">
-            <h2>Tentang Veyra Fragrance</h2>
+        <div class="section-title">
+            <span>About Brand</span>
+            <h2>Aroma yang Dibuat untuk Meninggalkan Kesan</h2>
             <p>
-                Veyra Fragrance menghadirkan pilihan parfum dengan karakter aroma yang berbeda 
-                untuk setiap kepribadian. Dari aroma fresh yang clean, soft yang manis, 
-                warm yang tenang, hingga bold yang elegan.
+                Veyra Fragrance menghadirkan parfum dengan karakter aroma yang mudah dipakai,
+                elegan, dan cocok untuk berbagai suasana.
             </p>
         </div>
 
-        <div class="about-box">
-            <h3>Kenapa Veyra?</h3>
-            <ul>
-                <li>Varian aroma untuk berbagai karakter</li>
-                <li>Cocok untuk daily use dan momen spesial</li>
-                <li>Deskripsi notes aroma yang mudah dipahami</li>
-                <li>Order mudah langsung lewat WhatsApp</li>
-            </ul>
+        <div class="about-grid">
+            <div class="about-card">
+                <h3>Long Lasting</h3>
+                <p>Aroma tahan lama untuk aktivitas harian.</p>
+            </div>
+
+            <div class="about-card">
+                <h3>Premium Scent</h3>
+                <p>Perpaduan notes aroma yang lembut dan berkelas.</p>
+            </div>
+
+            <div class="about-card">
+                <h3>Easy Order</h3>
+                <p>Order langsung melalui WhatsApp atau marketplace.</p>
+            </div>
         </div>
     </section>
 
-    <section class="collection" id="collection">
+    <section class="catalog" id="catalog">
         <div class="section-title">
-            <h2>Our Collection</h2>
-            <p>Pilih parfum sesuai karakter dan suasana yang kamu inginkan.</p>
+            <span>Product Catalog</span>
+            <h2>Koleksi Parfum Veyra</h2>
+            <p>Pilih parfum berdasarkan karakter aroma yang kamu suka.</p>
         </div>
 
-        <div class="product-container">
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="fresh">Fresh</button>
+            <button class="filter-btn" data-category="sweet">Sweet</button>
+            <button class="filter-btn" data-category="warm">Warm</button>
+            <button class="filter-btn" data-category="bold">Bold</button>
+        </div>
 
-            <div class="product-card">
-                <img src="assets/product/noir.png" alt="Noir Perfume">
+        <div class="product-grid">
+
+            <div class="product-card" data-category="bold">
+                <div class="product-image">
+                    <img src="assets/product/noir.png" alt="Noir Perfume">
+                </div>
                 <div class="product-info">
                     <h3>Noir</h3>
-                    <p class="character">Bold & Elegant</p>
+                    <p class="type">Bold & Elegant</p>
                     <p class="notes">Vanilla • Amber • Musk</p>
-                    <p>
-                        Aroma yang tegas, hangat, dan premium. Cocok untuk acara malam, 
-                        dinner, atau saat ingin tampil lebih elegan.
-                    </p>
-                    <span>Rp129.000</span>
-
-                    <a href="https://wa.me/6281234567890?text=Halo%20Veyra%20Fragrance,%20saya%20mau%20order%20Noir.%0A%0AProduk:%20Noir%0AHarga:%20Rp129.000%0ACatatan:" target="_blank" class="btn-product">
-                        Order via WhatsApp
-                    </a>
+                    <p class="desc">Aroma tegas, hangat, dan premium. Cocok untuk acara malam atau dinner.</p>
+                    <h4>Rp129.000</h4>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Veyra%20Fragrance,%20saya%20mau%20order%20parfum%20Noir" target="_blank">Order via WhatsApp</a>
                 </div>
             </div>
 
-            <div class="product-card">
-                <img src="assets/product/aeris.png" alt="Aeris Perfume">
+            <div class="product-card" data-category="fresh">
+                <div class="product-image citrus">
+                    <img src="assets/product/citrus-air.png" alt="Citrus Air">v
+                </div>
                 <div class="product-info">
-                    <h3>Aeris</h3>
-                    <p class="character">Fresh & Clean</p>
+                    <h3>Citrus Air</h3>
+                    <p class="type">Fresh & Clean</p>
                     <p class="notes">Citrus • Green Tea • White Musk</p>
-                    <p>
-                        Aroma segar dan ringan untuk aktivitas harian. Cocok untuk kerja, 
-                        kuliah, atau saat ingin wangi clean tanpa terasa berlebihan.
-                    </p>
-                    <span>Rp119.000</span>
-
-                    <a href="https://wa.me/6281234567890?text=Halo%20Veyra%20Fragrance,%20saya%20mau%20order%20Aeris.%0A%0AProduk:%20Aeris%0AHarga:%20Rp119.000%0ACatatan:" target="_blank" class="btn-product">
-                        Order via WhatsApp
-                    </a>
+                    <p class="desc">Aroma segar dan ringan untuk kerja, kuliah, atau aktivitas harian.</p>
+                    <h4>Rp119.000</h4>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Veyra%20Fragrance,%20saya%20mau%20order%20parfum%20Citrus%20Air" target="_blank">Order via WhatsApp</a>
                 </div>
             </div>
 
-            <div class="product-card">
-                <img src="assets/product/luma.png" alt="Luma Perfume">
+            <div class="product-card" data-category="sweet">
+                <div class="product-image bloom">
+                    <img src="assets/product/bloom.png" alt="Bloom">
+                </div>
                 <div class="product-info">
-                    <h3>Luma</h3>
-                    <p class="character">Soft & Sweet</p>
-                    <p class="notes">Pear • Jasmine • Vanilla</p>
-                    <p>
-                        Aroma lembut, manis, dan feminin. Cocok untuk hangout, date, 
-                        atau daily scent yang soft dan nyaman.
-                    </p>
-                    <span>Rp125.000</span>
-
-                    <a href="https://wa.me/6281234567890?text=Halo%20Veyra%20Fragrance,%20saya%20mau%20order%20Luma.%0A%0AProduk:%20Luma%0AHarga:%20Rp125.000%0ACatatan:" target="_blank" class="btn-product">
-                        Order via WhatsApp
-                    </a>
+                    <h3>Bloom</h3>
+                    <p class="type">Soft & Sweet</p>
+                    <p class="notes">Rose • Jasmine • Pear</p>
+                    <p class="desc">Aroma floral yang lembut, manis, dan feminin. Cocok untuk daily scent.</p>
+                    <h4>Rp125.000</h4>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Veyra%20Fragrance,%20saya%20mau%20order%20parfum%20Bloom" target="_blank">Order via WhatsApp</a>
                 </div>
             </div>
 
-            <div class="product-card">
-                <img src="assets/product/amber.png" alt="Amber Perfume">
+            <div class="product-card" data-category="sweet">
+                <div class="product-image vanilla">
+                    <img src="assets/product/vanilla-muse.png" alt="Vanilla Muse">
+                </div>
                 <div class="product-info">
-                    <h3>Amber</h3>
-                    <p class="character">Warm & Calm</p>
+                    <h3>Vanilla Muse</h3>
+                    <p class="type">Sweet & Cozy</p>
+                    <p class="notes">Vanilla • Caramel • Tonka Bean</p>
+                    <p class="desc">Aroma manis dan hangat, cocok untuk suasana santai atau date night.</p>
+                    <h4>Rp132.000</h4>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Veyra%20Fragrance,%20saya%20mau%20order%20parfum%20Vanilla%20Muse" target="_blank">Order via WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="warm">
+                <div class="product-image amber">
+                    <img src="assets/product/amber-dusk.png" alt="Amber Dusk">
+                </div>
+                <div class="product-info">
+                    <h3>Amber Dusk</h3>
+                    <p class="type">Warm & Calm</p>
                     <p class="notes">Amber • Sandalwood • Patchouli</p>
-                    <p>
-                        Aroma hangat dan tenang dengan kesan mature. Cocok untuk kerja, 
-                        malam hari, atau suasana yang lebih calm.
-                    </p>
-                    <span>Rp135.000</span>
+                    <p class="desc">Aroma hangat dan tenang dengan kesan mature dan elegan.</p>
+                    <h4>Rp135.000</h4>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Veyra%20Fragrance,%20saya%20mau%20order%20parfum%20Amber%20Dusk" target="_blank">Order via WhatsApp</a>
+                </div>
+            </div>
 
-                    <a href="https://wa.me/6281234567890?text=Halo%20Veyra%20Fragrance,%20saya%20mau%20order%20Amber.%0A%0AProduk:%20Amber%0AHarga:%20Rp135.000%0ACatatan:" target="_blank" class="btn-product">
-                        Order via WhatsApp
-                    </a>
+            <div class="product-card" data-category="fresh">
+                <div class="product-image musk">
+                    <img src="assets/product/pure-musk.png" alt="Pure Mask">
+                </div>
+                <div class="product-info">
+                    <h3>Pure Musk</h3>
+                    <p class="type">Clean & Minimal</p>
+                    <p class="notes">White Musk • Cotton • Soft Wood</p>
+                    <p class="desc">Aroma clean dan simple, cocok untuk dipakai setiap hari.</p>
+                    <h4>Rp122.000</h4>
+                    <a href="https://wa.me/6281234567890?text=Halo%20Veyra%20Fragrance,%20saya%20mau%20order%20parfum%20Pure%20Musk" target="_blank">Order via WhatsApp</a>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <section class="scent-guide" id="scent">
+    <section class="guide" id="guide">
         <div class="section-title">
-            <h2>Find Your Scent</h2>
-            <p>Bingung pilih aroma? Mulai dari karakter yang paling cocok dengan kamu.</p>
+            <span>Find Your Scent</span>
+            <h2>Bingung Pilih Aroma?</h2>
+            <p>Pilih parfum berdasarkan kebutuhan dan suasana.</p>
         </div>
 
-        <div class="scent-container">
-            <div class="scent-card">
-                <h3>Suka aroma fresh?</h3>
-                <p>Pilih <strong>Aeris</strong> untuk kesan clean, ringan, dan segar.</p>
+        <div class="guide-grid">
+            <div class="guide-card">
+                <h3>Untuk Kerja / Kuliah</h3>
+                <p>Pilih aroma fresh, clean, dan tidak terlalu menyengat.</p>
             </div>
 
-            <div class="scent-card">
-                <h3>Suka aroma soft?</h3>
-                <p>Pilih <strong>Luma</strong> untuk wangi lembut, manis, dan feminin.</p>
+            <div class="guide-card">
+                <h3>Untuk Hangout / Date</h3>
+                <p>Pilih aroma sweet, soft, dan memberi kesan hangat.</p>
             </div>
 
-            <div class="scent-card">
-                <h3>Suka aroma warm?</h3>
-                <p>Pilih <strong>Amber</strong> untuk kesan hangat, calm, dan mature.</p>
-            </div>
-
-            <div class="scent-card">
-                <h3>Suka aroma bold?</h3>
-                <p>Pilih <strong>Noir</strong> untuk kesan elegan, tegas, dan premium.</p>
+            <div class="guide-card">
+                <h3>Untuk Acara Malam</h3>
+                <p>Pilih aroma bold, amber, musk, atau woody.</p>
             </div>
         </div>
     </section>
 
-    <section class="testimoni" id="testimoni">
+    <section class="testimoni">
         <div class="section-title">
-            <h2>Testimoni</h2>
-            <p>Apa kata mereka tentang Veyra Fragrance?</p>
+            <span>Testimoni</span>
+            <h2>Apa Kata Mereka?</h2>
         </div>
 
-        <div class="testimoni-container">
+        <div class="testimoni-grid">
             <div class="testimoni-card">
-                <p>
-                    “Aeris wanginya fresh banget, cocok dipakai harian. Nggak terlalu menyengat 
-                    tapi tetap terasa bersih.”
-                </p>
-                <h4>— Dina</h4>
+                <p>“Aromanya enak banget dan tahan lama. Packaging-nya juga rapi.”</p>
+                <h4>Rania</h4>
             </div>
 
             <div class="testimoni-card">
-                <p>
-                    “Noir cocok banget buat acara malam. Wanginya elegan dan bikin lebih percaya diri.”
-                </p>
-                <h4>— Kevin</h4>
+                <p>“Citrus Air cocok banget buat harian. Fresh tapi tetap elegan.”</p>
+                <h4>Dinda</h4>
             </div>
 
             <div class="testimoni-card">
-                <p>
-                    “Luma wanginya soft dan manis. Cocok buat yang suka aroma feminin tapi nggak lebay.”
-                </p>
-                <h4>— Clarissa</h4>
-            </div>
-        </div>
-    </section>
-
-    <section class="order-steps">
-        <div class="section-title">
-            <h2>Cara Order</h2>
-            <p>Order parfum favorit kamu dengan langkah yang mudah.</p>
-        </div>
-
-        <div class="steps-container">
-            <div class="step-card">
-                <span>01</span>
-                <h3>Pilih Produk</h3>
-                <p>Lihat koleksi parfum dan pilih aroma yang paling cocok untuk kamu.</p>
-            </div>
-
-            <div class="step-card">
-                <span>02</span>
-                <h3>Klik WhatsApp</h3>
-                <p>Tekan tombol order, lalu kamu akan langsung diarahkan ke WhatsApp admin.</p>
-            </div>
-
-            <div class="step-card">
-                <span>03</span>
-                <h3>Konfirmasi Pesanan</h3>
-                <p>Admin akan bantu konfirmasi produk, pembayaran, dan pengiriman.</p>
+                <p>“Noir wanginya mahal. Cocok banget buat acara malam.”</p>
+                <h4>Kevin</h4>
             </div>
         </div>
     </section>
 
     <section class="faq" id="faq">
         <div class="section-title">
-            <h2>FAQ</h2>
-            <p>Pertanyaan yang sering ditanyakan sebelum order.</p>
+            <span>FAQ</span>
+            <h2>Pertanyaan Umum</h2>
         </div>
 
-        <div class="faq-container">
+        <div class="faq-list">
             <div class="faq-item">
-                <h3>Apakah parfum ini unisex?</h3>
-                <p>Beberapa varian cocok untuk unisex, terutama Noir, Aeris, dan Amber.</p>
+                <div class="faq-question">
+                    <h3>Apakah parfum tahan lama?</h3>
+                    <span>+</span>
+                </div>
+                <p>Ketahanan parfum dapat berbeda tergantung aktivitas, suhu tubuh, dan cara pemakaian.</p>
             </div>
 
             <div class="faq-item">
-                <h3>Parfumnya tahan berapa lama?</h3>
-                <p>Ketahanan tergantung aktivitas dan jenis kulit, namun rata-rata cocok untuk penggunaan harian.</p>
+                <div class="faq-question">
+                    <h3>Bisa konsultasi aroma dulu?</h3>
+                    <span>+</span>
+                </div>
+                <p>Bisa. Admin akan membantu memberi rekomendasi aroma sesuai kebutuhan kamu.</p>
             </div>
 
             <div class="faq-item">
-                <h3>Bisa konsultasi pilih aroma?</h3>
-                <p>Bisa. Kamu bisa klik tombol WhatsApp untuk tanya aroma yang paling cocok.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3>Apakah bisa kirim ke luar kota?</h3>
-                <p>Bisa. Pengiriman akan dikonfirmasi oleh admin melalui WhatsApp.</p>
+                <div class="faq-question">
+                    <h3>Bisa order lewat marketplace?</h3>
+                    <span>+</span>
+                </div>
+                <p>Bisa disesuaikan. Tombol order dapat diarahkan ke WhatsApp, Shopee, atau Tokopedia.</p>
             </div>
         </div>
     </section>
 
     <section class="cta">
-        <h2>Sudah tahu aroma yang cocok?</h2>
-        <p>Klik WhatsApp dan order parfum favorit kamu sekarang.</p>
-
-        <a href="https://wa.me/6281234567890?text=Halo%20Veyra%20Fragrance,%20saya%20mau%20order%20parfum" target="_blank" class="btn">
-            Order Sekarang
-        </a>
+        <h2>Temukan Signature Scent Kamu</h2>
+        <p>Konsultasikan pilihan aromamu dan pilih parfum yang paling sesuai.</p>
+        <a href="https://wa.me/6281234567890?text=Halo%20Veyra%20Fragrance,%20saya%20mau%20konsultasi%20pilihan%20parfum" target="_blank">Konsultasi Sekarang</a>
     </section>
 
-    <footer class="footer">
+    <footer>
         <h3>Veyra Fragrance</h3>
-        <p>Perfume online shop demo website.</p>
+        <p>Perfume catalog demo website.</p>
         <p>Website demo by <strong>Revora</strong></p>
     </footer>
 
